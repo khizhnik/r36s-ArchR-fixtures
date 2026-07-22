@@ -1,0 +1,1 @@
+boot=LABEL=ARCHR root=LABEL=ARCHR_ROOT disk=LABEL=STORAGE quiet console=ttyS2,1500000 console=tty0 loglevel=0 vt.global_cursor_default=0 consoleblank=0 net.ifnames=0 systemd.show_status=false mitigations=off audit=0 nowatchdog threadirqs zswap.enabled=0 loop.max_loop=16 uboot.hwid_adc=a,r33s

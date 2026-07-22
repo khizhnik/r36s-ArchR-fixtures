@@ -1,0 +1,28 @@
+dwmmc_rockchip ff370000.mmc: IDMAC supports 32-bit address mode.
+dwmmc_rockchip ff370000.mmc: Using internal DMA controller.
+dwmmc_rockchip ff370000.mmc: Version ID is 270a
+dwmmc_rockchip ff380000.mmc: IDMAC supports 32-bit address mode.
+dwmmc_rockchip ff380000.mmc: Using internal DMA controller.
+dwmmc_rockchip ff380000.mmc: Version ID is 270a
+dwmmc_rockchip ff380000.mmc: DW MMC controller at irq 55,32 bit host data width,256 deep fifo
+dwmmc_rockchip ff370000.mmc: DW MMC controller at irq 54,32 bit host data width,256 deep fifo
+dwmmc_rockchip ff370000.mmc: Looking up vmmc-supply from device tree
+dwmmc_rockchip ff380000.mmc: Looking up vmmc-supply from device tree
+dwmmc_rockchip ff380000.mmc: Looking up vqmmc-supply from device tree
+dwmmc_rockchip ff370000.mmc: Looking up vqmmc-supply from device tree
+dwmmc_rockchip ff380000.mmc: Got CD GPIO
+dwmmc_rockchip ff370000.mmc: Got CD GPIO
+mmc_host mmc1: Bus speed (slot 0) = 400000Hz (slot req 400000Hz, actual 400000HZ div = 0)
+mmc_host mmc0: Bus speed (slot 0) = 400000Hz (slot req 400000Hz, actual 400000HZ div = 0)
+mmc_host mmc1: Bus speed (slot 0) = 50000000Hz (slot req 50000000Hz, actual 50000000HZ div = 0)
+mmc1: new high speed SDHC card at address aaaa
+mmcblk1: mmc1:aaaa SU08G 7.40 GiB
+ mmcblk1: p1 p2 p3
+mmc_host mmc0: Bus speed (slot 0) = 50000000Hz (slot req 50000000Hz, actual 50000000HZ div = 0)
+mmc0: new high speed SDXC card at address aaaa
+mmcblk0: mmc0:aaaa SK512 477 GiB
+ mmcblk0: p1
+fsck: /dev/mmcblk1p1: 26 files, 1437/16375 clusters
+EXT4-fs (mmcblk1p2): mounted filesystem 3cf95927-e0f1-4043-ad1d-fe04cae2f642 r/w with ordered data mode. Quota mode: none.
+EXT4-fs (mmcblk1p3): mounted filesystem e91f0745-b5c0-43dd-ab60-887a3c0fc47c r/w with ordered data mode. Quota mode: none.
+exFAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
