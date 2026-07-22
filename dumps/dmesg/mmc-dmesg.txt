@@ -1,0 +1,18 @@
+mmc_host mmc1: Bus speed (slot 0) = 400000Hz (slot req 400000Hz, actual 400000HZ div = 0)
+mmc_host mmc0: Bus speed (slot 0) = 400000Hz (slot req 400000Hz, actual 400000HZ div = 0)
+mmc_host mmc1: Bus speed (slot 0) = 50000000Hz (slot req 50000000Hz, actual 50000000HZ div = 0)
+mmc1: new high speed SDHC card at address aaaa
+mmcblk1: mmc1:aaaa SU08G 7.40 GiB
+ mmcblk1: p1 p2 p3
+fsck: /dev/mmcblk1p1: 26 files, 1437/16375 clusters
+EXT4-fs (mmcblk1p2): mounted filesystem 3cf95927-e0f1-4043-ad1d-fe04cae2f642 r/w with ordered data mode. Quota mode: none.
+EXT4-fs (mmcblk1p3): mounted filesystem e91f0745-b5c0-43dd-ab60-887a3c0fc47c r/w with ordered data mode. Quota mode: none.
+mmc_host mmc0: Timeout sending command (cmd 0x202000 arg 0x0 status 0x80202000)
+mmc0: error -110 whilst initialising SD card
+mmc_host mmc0: Timeout sending command (cmd 0x202000 arg 0x0 status 0x80202000)
+mmc_host mmc0: Bus speed (slot 0) = 300000Hz (slot req 300000Hz, actual 300000HZ div = 0)
+mmc_host mmc0: Timeout sending command (cmd 0x202000 arg 0x0 status 0x80202000)
+mmc_host mmc0: Bus speed (slot 0) = 200000Hz (slot req 200000Hz, actual 200000HZ div = 0)
+mmc_host mmc0: Timeout sending command (cmd 0x202000 arg 0x0 status 0x80202000)
+mmc_host mmc0: Bus speed (slot 0) = 100000Hz (slot req 100000Hz, actual 100000HZ div = 0)
+mmc_host mmc0: Timeout sending command (cmd 0x202000 arg 0x0 status 0x80202000)

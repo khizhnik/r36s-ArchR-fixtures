@@ -1,0 +1,22 @@
+--- a/dumps/dtb/rk3326-gameconsole-r36s.dts
++++ b/dumps/dtb/rk3326-gameconsole-r36s.dts
+@@ -1274,17 +1274,13 @@
+ 		bus-width = <0x04>;
+ 		fifo-depth = <0x100>;
+-		max-frequency = <0x8f0d180>;
++		max-frequency = <50000000>;
+ 		pinctrl-names = "default";
+ 		pinctrl-0 = <0x7d 0x7e 0x7f>;
+ 		power-domains = <0x73 0x0a>;
+ 		status = "okay";
+ 		cap-sd-highspeed;
+ 		card-detect-delay = <0x320>;
+ 		cd-gpios = <0x80 0x0e 0x01>;
+ 		disable-wp;
+-		sd-uhs-sdr12;
+-		sd-uhs-sdr25;
+-		sd-uhs-sdr50;
+-		sd-uhs-sdr104;
+ 		vmmc-supply = <0x7c>;
+ 		vqmmc-supply = <0x43>;
+ 		phandle = <0xe6>;
