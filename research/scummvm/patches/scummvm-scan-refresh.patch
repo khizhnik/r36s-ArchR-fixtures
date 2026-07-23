@@ -1,0 +1,36 @@
+--- a/usr/config/scummvm/games/_Scan ScummVM Games.sh
++++ b/usr/config/scummvm/games/_Scan ScummVM Games.sh
+@@ -8,6 +8,30 @@
+ 
+ clear
+ echo "Scanning for games..."
+-bash /usr/bin/start_scummvm.sh add
+-echo "Adding games..."
+-bash /usr/bin/start_scummvm.sh create
++
++if ! bash /usr/bin/start_scummvm.sh add; then
++  echo "ScummVM game scan failed."
++  sleep 2
++  exit 1
++fi
++
++echo "Creating launcher files..."
++
++if ! bash /usr/bin/start_scummvm.sh create; then
++  echo "ScummVM launcher creation failed."
++  sleep 2
++  exit 1
++fi
++
++if command -v curl >/dev/null 2>&1 && \
++   curl --connect-timeout 2 --max-time 5 -fsS \
++     http://localhost:1234/reloadgames >/dev/null 2>&1
++then
++  echo "ScummVM scan completed."
++  echo "EmulationStation game list was refreshed."
++else
++  echo "ScummVM scan completed."
++  echo "EmulationStation game list refresh failed."
++  echo "Restart EmulationStation to refresh the game list."
++  sleep 2
++fi
